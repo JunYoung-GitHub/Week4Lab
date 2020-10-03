@@ -8,9 +8,9 @@
     <body>
         <h1>Simple Note Keeper</h1><br>
         <h2>Edit Note</h2><br>
-        <form method="post" action="hello">
-            Title: <input type="text" name="title" value="${title}"><br>
-            Contents: <input type="text" name="content" value="${content}"><br>
+        <form method="post" action="note">
+            Title: <input type="text" name="title" value="${note.title}"><br>
+            Contents: <textarea rows="8" cols="30" name="content">${note.content}</textarea><br>
             <input type="submit" value="Save">
         </form>
         

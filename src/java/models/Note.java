@@ -2,18 +2,23 @@ package models;
 import java.io.*;
 
 public class Note {
-    private String content;
     private String title;
+    private String content;
     
     public Note() {
-        String title = " ";
-        String content = " ";
+        String title = "test";
+        String content = "test2";
+    }
+    
+    public Note(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 
     public Note(String content) {
         this.content = content;
     }
-
+    
     public String getContent() {
         return content;
     }
